@@ -10,7 +10,7 @@ const NavLink = ({ children, ...props }: any) => {
 
     if (
         pathname?.replace(/\/$/, '').replace(/\bindex$/, '') ===
-        props.href.replace(/\/$/, '')
+        props.href.replace(/\/$/, '').replace(/\\/g, '/')
     ) {
         isActive = true
     }

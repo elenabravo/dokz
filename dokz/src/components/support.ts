@@ -87,7 +87,7 @@ export const globalStyles = css`
 
 export function getMdxSidebarTree(): DirectoryTree {
     try {
-        return require('nextjs_root_folder_/sidebar.json')
+        return require('nextjs_root_folder_/docs/sidebar.json')
     } catch {
         return {
             name: 'pages',

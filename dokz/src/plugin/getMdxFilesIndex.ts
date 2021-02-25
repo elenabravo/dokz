@@ -61,9 +61,9 @@ function capitalizeFirstLetter(string) {
 }
 
 async function getPagesPath() {
-    var [err, stats] = await to(fs.promises.stat('src/pages'))
+    var [err, stats] = await to(fs.promises.stat('docs/pages'))
     if (!err && stats.isDirectory()) {
-        return 'src/pages'
+        return 'docs/pages'
     }
     var [err, stats] = await to(fs.promises.stat('pages'))
     if (!err && stats.isDirectory()) {

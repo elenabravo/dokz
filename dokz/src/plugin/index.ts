@@ -90,7 +90,7 @@ const writeMdxIndex = throttle(() => {
     return getMdxFilesIndex()
         .then((index) => {
             return fs.promises.writeFile(
-                'sidebar.json',
+                'docs/sidebar.json',
                 JSON.stringify(index, null, 4),
             )
         })
